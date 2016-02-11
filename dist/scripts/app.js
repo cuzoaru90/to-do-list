@@ -17,7 +17,6 @@ var app = angular.module('toDoList', ['ui.router']);
 
 app.controller('MainCtrl', ['$scope', function($scope){
   $scope.test = 'Controller working!';
-
 }]);
 
 app.controller('listCtrl', ['$scope', 'lists', function($scope, lists){
