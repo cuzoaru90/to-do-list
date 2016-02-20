@@ -2,23 +2,30 @@
 <html>
   <head lang="en">
     <meta charset="UTF-8">
-    <title>ToDo List</title>
-    <link rel="stylesheet" href="/styles/style.css">
+    <title>ToDoList</title>
+    <link rel="stylesheet" href="//styles/main.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
   </head>
   <body ng-app="toDoList" ng-controller="MainCtrl">
+
+  <div class="container center">
+
+    <h1>ToDo Application</h1>
 
     <a ui-sref="lists">To Do Lists</a>
 
     <div ui-view></div>
+
+  </div>
     
   </body>
 
-<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 
 <script src="/scripts/app.js"></script>
 <script src="/scripts/controllers/listCtrl.js"></script>
 <script src="/scripts/controllers/itemCtrl.js"></script>
-
 
 </html>

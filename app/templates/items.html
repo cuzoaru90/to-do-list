@@ -6,13 +6,17 @@
      <body class="items">
        
        <div ng-repeat="item in list.items">
-         {{item}}
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="" />{{item}}
+          </label>
+        </div>
        </div>
 
 
        <form ng-submit="addItem()">
          <input type="text" ng-model="title"></input>
-         <button type="submit">Add Items</button>
+         <button class="btn btn-success">Add ToDo</button>
        </form>
        
      </body>
